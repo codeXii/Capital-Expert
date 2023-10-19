@@ -1,13 +1,15 @@
 var redirect = document.querySelector('.redirecet');
-var login1 = document.querySelector('.login1');
+var password = document.querySelector('.password');
+var cpassword = document.querySelector('.cpassword');
+
 
 
 redirect.addEventListener('click', function(){
-    alert("Registration in progress");
+    if(password.value != cpassword.value){
+        alert('Passwords do not match');
+    }else{
+        alert("Registration in progress");
          window.location.href = "./success.html";
-});
-
-
-login1.addEventListener('click', function(){
-    alert("i got clicked");
+    }
+    
 });
