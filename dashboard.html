@@ -9,6 +9,7 @@
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="css/fontawesome-free-5.15.2-web/css/all.min.css">
@@ -40,10 +41,19 @@
               <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a href="#learn" class="nav-link">Account</a>
+                    <a href="#learn" class="nav-link">Dashboard</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#questions" class="nav-link">Settings</a>
+                    <a href="#learn" class="nav-link">Deposit</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#learn" class="nav-link">Withdrawal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#learn" class="nav-link">Transaction history</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#questions" class="nav-link">Account Settings</a>
                   </li>
                   <li class="nav-item btn btn-outline-primary btn-sm">
                     <a href="./login.html" class="nav-link">Logout</a>
@@ -55,6 +65,156 @@
     </section>
 
   <!-- Trading view widget -->
+<section>
+  <div class="tradingview-widget-container" style="background: #041e37; min-height: 50px !important; overflow: hidden; margin-bottom: 10px;">
+    <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          {
+          "symbols": [
+            {
+              "title": "S&P 500",
+              "proName": "OANDA:SPX500USD"
+            },
+            {
+              "title": "Nasdaq 100",
+              "proName": "OANDA:NAS100USD"
+            },
+            {
+              "title": "EUR/USD",
+              "proName": "FX_IDC:EURUSD"
+            },
+            {
+              "title": "BTC/USD",
+              "proName": "BITSTAMP:BTCUSD"
+            },
+            {
+              "title": "ETH/USD",
+              "proName": "BITSTAMP:ETHUSD"
+            }
+          ],
+          "colorTheme": "dark",
+          "isTransparent": true,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+      </script>      
+</div>
+</div>
+</section> <!-- End Crypto Rates Widget -->
+
+
+
+
+
+<!-- dashboard greeting message -->
+  <section class="px-3 mb-4">
+   <div class="d-flex align-items-center justify-content-between">
+    <h3>MY DASHBOARD</h3>
+    <div>
+      <p> <i class="bi bi-person-badge"></i> Welcome, Haukli Arvid</p>
+    </div>
+   </div>
+  </section>
+
+
+
+  <!-- Profile earning details -->
+  <section>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 col-6">
+          <div class="card-details text-center"> 
+            <i class="bi bi-cash-coin text-dark h2"></i>
+            <h4> TOTAL PROFIT </h4>
+            <strong><p>Amount $1500.00</p></strong>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="card-details text-center"> 
+            <i class="bi bi-bank2 text-dark h2"></i>
+            <h4> ACTIVE DEPOSIT </h4>
+            <strong><p>Amount $500.00</p></strong>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 col-6">
+          <div class="card-details text-center"> 
+            <i class="bi bi-person-fill-down text-dark h2"></i>
+            <h4> ACCOUNT LEVEL </h4>
+            <strong><p>Lv 3</p></strong>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="card-details text-center"> 
+            <i class="bi bi-exclamation-octagon text-dark h2"></i>
+            <h4> ACCOUNT STATUS </h4>
+            <strong><p  class="text-success"> Active  </p></strong>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+<section>
+ <div class="container">
+  <div class="container" id="tradingview_741c8"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 900,
+  "height": 610,
+  "symbol": "FX:BTCUSD",
+  "timezone": "Etc/UTC",
+  "theme": "Dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "withdateranges": true,
+  "range": "ytd",
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "details": true,
+  "studies": [
+    "CCI@tv-basicstudies"
+  ],
+  "container_id": "tradingview_741c8"
+}
+  );
+  </script>
+
+ </div>
+</section>
+
+
+
+<section>
+  <div class="container">
+    <div class="col-md">
+      <p>Your trading account strategy manager trades bitcoin with leverage of up 1:10. You can choose to change this at any time.</p>
+    </div>
+
+    <div class="col-md mt-5">
+      <p>For more details on your trading leverage contact your account manager by clicking the chat icon below</p>
+      <p>    <a href="https://wa.me/+17156573545"><i class="bi bi-whatsapp h3 text-success" ></i></a> </i>  </p>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+<!-- Trading widget 2 -->
   <section id="trading-view_widget">
     <div style="height:62px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #FFFFFF; border-radius: 4px; text-align: right; line-height:14px; block-size:62px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; padding:1px;padding: 0px; margin: 0px; width: 100%;">
         <div style="height:40px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&amp;theme=light&amp;pref_coin_id=1505&amp;invert_hover=" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div>
@@ -63,49 +223,8 @@
     </div>
   </section>
 
-
-  <!-- Registration Form -->
-  <!-- <section class="p-5">
-   <div class="container">
-    <div class="form-box text-white">
-        <div class="row">
-            <div class="col-md">
-                <h4>Login Now</h4>
-                register form
-                <form method="post">
-                    <div class="mb-3">
-                      <label for="email" class="col-form-label">Email:</label>
-                      <input type="email" class="form-control" id="email" name="email" class="input1"  required/>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="password" class="col-form-label">Password:</label>
-                        <input type="password" class="form-control" id="password" name="password" class="input2" required/>
-                    </div>
-                    
-
-                    <button type="submit" class="btn btn-outline-success login1">Register</button>
-                  </form>
-            </div>
-        </div>
-    </div>
-   </div>
-  </section>  -->
-
-  <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md d-flex align-items-center justify-content-center">
-                <h1 class="text-danger">Site Under Maintenance!!!</h1>
-            </div>
-            <p class="text-center">.....Please check back later</p>
-        </div>
-    </div>
-  </section>
- 
-
-
-  <!-- <footer>
+  <!-- footer -->
+  <footer>
     <div class="container text-center text-white p-5">
         <div class="row">
             <div class="col-md mb-5">
@@ -141,7 +260,7 @@
             </div>
         </div>
     </div>
-  </footer> -->
+  </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
