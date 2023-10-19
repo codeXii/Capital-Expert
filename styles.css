@@ -63,3 +63,14 @@ footer{
     border-radius: 10px;
     box-shadow: 8px 9px 7px rgba(0, 0, 0, .3);
 }
+
+
+/* dashboard */
+.card-details{
+    padding: 10px 0;
+    margin: 10px;
+    color: aliceblue;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    box-shadow: 8px 9px 7px rgba(0, 0, 0, .3);
+}
