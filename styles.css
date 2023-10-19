@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 70px;
+  }
+
+#hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 50px;
+    background-image: url('./images/pexels-burak-the-weekender-186461.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mission{
+    padding: 20px;
+}
+
+.img-box{
+    width: 300px;
+    height: 470px;
+    margin: auto;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+
+#mission-two{
+    background-color: rgb(24, 23, 23);
+}
+
+#invest{
+    background-color: rgb(185, 186, 252);
+}
+
+.card-box{
+    padding: 10px;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    box-shadow: 8px 9px 7px rgba(0, 0, 0, .3);
+}
+
+footer{
+    background-color: rgb(24, 23, 23);
+}
+
+
+/* Registration page */
+.form-box{
+    padding: 30px;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    box-shadow: 8px 9px 7px rgba(0, 0, 0, .3);
+}
