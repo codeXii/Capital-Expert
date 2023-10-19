@@ -78,20 +78,18 @@
             <div class="col-md">
                 <h4>Login Now</h4>
                 <!-- register form -->
-                
                     <div class="mb-3">
                       <label for="email" class="col-form-label">Email:</label>
-                      <input type="email" class="form-control" id="email" name="email" class="input1"  required/>
+                      <input type="email" class="form-control email" id="email" name="email" class="input1"  required/>
                     </div>
                     
                     <div class="mb-3">
                         <label for="password" class="col-form-label">Password:</label>
-                        <input type="password" class="form-control" id="password" name="password" class="input2" required/>
+                        <input type="password" class="form-control password" id="password" name="password" class="input2" required/>
                     </div>
                     
 
-                    <button type="submit" class="btn btn-outline-success login1">Register</button>
-            
+                    <button type="submit" class="btn btn-outline-success login1">Login</button>
             </div>
         </div>
     </div>
@@ -145,9 +143,20 @@
 
     <script>
         var login1 = document.querySelector('.login1');
+        var email = document.querySelector('.email');
+        var password = document.querySelector('.password');
+
+
         login1.addEventListener('click', function(){
+          if(email.value != "haukliarvid56@gmail.com"){
+            alert('Incorrect credentials');
+          }else if(password.value != "Solvi1234") {
+            alert('Incorrect credentials');
+          }else{
             alert("Loggin in");
-            window.location.href = "./dashboard.html";
+                window.location.href = "./dashboard.html";
+          }
+            
          });
 
     </script>
